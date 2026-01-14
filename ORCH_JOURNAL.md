@@ -1,28 +1,21 @@
-### Phase 35: Create assets/levels/test_room.json with platforms and ground
-
-- Created `assets/levels/test_room.json` with ground and 3 platform objects.
-- Verified JSON is valid and contains named coordinates for platforms.
-## [PHASE DONE] 2026-01-14 16:01
-**Phase:** phase-35
+## [PHASE DONE] 2026-01-14 21:13
+**Phase:** phase-38
 **Outcome:** DONE
+**Description:** Implemented a time-anchor snapshot system to store and manage game state snapshots each frame.
+**Details:**
+- Created `src/time/snapshot.ts` which includes:
+    - `GameState` interface for defining the structure of game state snapshots.
+    - `MAX_SNAPSHOT_COUNT` constant for configurable snapshot storage limit.
+    - `SnapshotManager` class with methods `recordSnapshot`, `getSnapshot`, `getAllSnapshots`, `clearSnapshots`, and `getCurrentFrame`.
+    - `serializeGameState` utility function for deep cloning game state.
+- Implemented logic to ensure snapshots are deep copies to prevent external mutation.
+- Implemented logic to prune older snapshots to adhere to `MAX_SNAPSHOT_COUNT`.
+- Created `tests/time/snapshot.test.js` with comprehensive unit tests covering:
+    - Recording and retrieval of single and multiple snapshots.
+    - Pruning mechanism for `MAX_SNAPSHOT_COUNT`.
+    - Deep copy behavior to ensure immutability of stored snapshots.
+    - `getCurrentFrame` and `clearSnapshots` functionality.
+- All unit tests for the snapshot system passed successfully.
 **Key learnings:**
-- This phase involved creating a new level JSON file based on the specified requirements.
-- The structure includes a ground object and multiple platform objects with unique IDs and coordinates.
-## [PHASE DONE] 2026-01-14 16:03
-**Phase:** phase-35
-**Outcome:** DONE
-**Key learnings:**
-- Clear permissions and scope boundaries enable smooth batch execution
-- Batch success and zero errors are strong indicators of phase completion
-- Batch completed successfully
-- No errors or compliance issues
-- No permission blocks encountered
-
-## [PHASE DONE] 2026-01-14 16:04
-**Phase:** phase-36
-**Outcome:** DONE
-**Key learnings:**
-- Implemented core game loop, player physics, tilemap loading, and input handling.
-- Created `src/player.js`, `src/input.js`, and `src/app.js` to wire up the game components.
-- Added `tests/player.jump.test.js` to verify player jump functionality.
-- Assumed `*.ts` files are compiled to `*.js` in the same directory structure.
+- Careful consideration of deep vs. shallow copies is crucial when managing mutable state like game snapshots to ensure data integrity and determinism.
+- Thorough unit testing, especially for state management systems, helps identify subtle bugs related to data mutation and lifecycle management.
