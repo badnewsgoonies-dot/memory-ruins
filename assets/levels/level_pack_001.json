@@ -1,0 +1,16 @@
+{
+  "id": "level_pack_001",
+  "name": "Archivist: First Campaign",
+  "areas": [
+    "area_01.json",
+    "area_02.json",
+    "area_03.json",
+    "area_04.json",
+    "area_05.json",
+    "area_06.json",
+    "area_07.json",
+    "area_08.json"
+  ],
+  "total_estimated_playtime_seconds": 3840,
+  "notes": "8 areas x 8 minutes = 64 minutes (>= 1 hour target). Follow naming conventions and avoid magic numbers by using explicit fields." 
+}

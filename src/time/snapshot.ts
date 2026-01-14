@@ -6,19 +6,17 @@
  */
 export interface GameState {
   frame: number;
-  // Add other relevant game state properties here
   player: {
     position: { x: number; y: number };
     health: number;
-    // ...
+    inventory: string[];
   };
   enemies: Array<{
     id: string;
     position: { x: number; y: number };
     health: number;
-    // ...
   }>;
-  // ... other game entities and world data
+  [key: string]: any; // Add index signature here
 }
 
 /**
@@ -32,6 +30,8 @@ export const MAX_SNAPSHOT_COUNT = 100; // Configurable constant
  * Snapshots are deterministic and size-bounded.
  */
 export class SnapshotManager {
+  private snapshots: GameState[] = []; // Stores the recorded game states
+  private currentFrame: number = 0; // Tracks the frame of the latest snapshot
   private maxSnapshots: number;
 
   constructor(maxSnapshots: number = MAX_SNAPSHOT_COUNT) {

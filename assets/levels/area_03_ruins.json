@@ -1,0 +1,10 @@
+{
+  "version": "1.0",
+  "id": "area_03_ruins",
+  "name": "Area 03 - Ruins",
+  "estimated_minutes": 12,
+  "metadata": { "difficulty": "medium" },
+  "rooms": [
+    { "id": "ruins_entry", "description": "Collapsed corridors and echo puzzles; requires Time-Anchor sequencing.", "puzzles": ["routing","echo_sequence"], "entities": [] }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "area_08",
+  "name": "Archive Core",
+  "description": "Final area for this pack; a multi-room finale with layered puzzles and a zone guardian.",
+  "estimated_playtime_seconds": 480,
+  "rooms": [
+    { "id": "a8_room_01", "puzzles": ["final_puzzle_phase1"] },
+    { "id": "a8_room_02", "puzzles": ["final_puzzle_phase2"] }
+  ],
+  "entities": []
+}

@@ -1,0 +1,23 @@
+{
+  "npcs": [
+    {
+      "id": "innkeeper",
+      "name": "Innkeeper",
+      "start": "l1",
+      "lines": [
+        { "id": "l1", "text": "Welcome to my inn, traveler.", "choices": [{ "text": "Ask about work", "next": "l2" }, { "text": "Leave", "next": "end" }] },
+        { "id": "l2", "text": "I might have a job cleaning the stables. Interested?", "choices": [{ "text": "Yes", "next": "l3" }, { "text": "No", "next": "end" }] },
+        { "id": "l3", "text": "Good. Come back tomorrow to begin.", "choices": [{ "text": "Thanks", "next": "end" }] }
+      ]
+    },
+    {
+      "id": "sage",
+      "name": "Old Sage",
+      "start": "s1",
+      "lines": [
+        { "id": "s1", "text": "The stars speak tonight.", "choices": [{ "text": "Ask about stars", "next": "s2" }, { "text": "Ignore", "next": "end" }] },
+        { "id": "s2", "text": "They warn of changes. Keep your eyes open.", "choices": [{ "text": "Thank you", "next": "end" }] }
+      ]
+    }
+  ]
+}

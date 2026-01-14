@@ -1,0 +1,11 @@
+{
+  "id": "area_07",
+  "name": "Echo Chambers",
+  "description": "Narrative beat area with environmental puzzles and collectible Story Shards.",
+  "estimated_playtime_seconds": 480,
+  "rooms": [
+    { "id": "a7_room_01", "puzzles": ["memory_fragments"] },
+    { "id": "a7_room_02", "puzzles": ["echo_puzzle"] }
+  ],
+  "entities": []
+}

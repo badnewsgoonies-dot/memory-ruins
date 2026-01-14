@@ -1,0 +1,10 @@
+{
+  "id": "area_06_final_reckoning",
+  "title": "Final Reckoning",
+  "estimated_playtime_minutes": 10,
+  "puzzles": [
+    {"id":"p1","type":"multi_node_boss","description":"Final encounter: manipulate multiple time anchors under pressure"},
+    {"id":"p2","type":"choice","description":"Make a branching narrative choice affecting end-state (BRANCH_STATES)"}
+  ],
+  "notes": "Concludes the first-hour arc; supports branching endings based on player state"
+}

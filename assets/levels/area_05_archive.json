@@ -1,0 +1,10 @@
+{
+  "version": "1.0",
+  "id": "area_05_archive",
+  "name": "Area 05 - Archive",
+  "estimated_minutes": 8,
+  "metadata": { "difficulty": "easy" },
+  "rooms": [
+    { "id": "archive_stack", "description": "Lore-rich area with collectible memory shards and light puzzles.", "puzzles": ["collection","memory_fragments"], "entities": [] }
+  ]
+}

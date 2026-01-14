@@ -1,0 +1,7 @@
+{
+  "shop": [
+    { "id": "medkit", "name": "Medkit", "price": 10 },
+    { "id": "ammo", "name": "Ammo", "price": 5 },
+    { "id": "health_potion", "name": "Health Potion", "price": 25 }
+  ]
+}

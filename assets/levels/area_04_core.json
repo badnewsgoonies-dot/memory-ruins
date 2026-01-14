@@ -1,0 +1,10 @@
+{
+  "version": "1.0",
+  "id": "area_04_core",
+  "name": "Area 04 - Core",
+  "estimated_minutes": 10,
+  "metadata": { "difficulty": "hard" },
+  "rooms": [
+    { "id": "core_chamber", "description": "Central puzzle chamber combining mechanics from previous areas.", "puzzles": ["multi_stage","time_anchor_combo"], "entities": [] }
+  ]
+}

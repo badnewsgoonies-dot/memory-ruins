@@ -1,0 +1,13 @@
+{
+  "manifest_version": 1,
+  "levels": [
+    "area_01_tutorial.json",
+    "level_02_lab.json",
+    "area_03_time_anchored.json",
+    "area_04_sublevel_ruins.json",
+    "area_05_core_archive.json",
+    "area_06_final_reckoning.json"
+  ],
+  "total_estimated_playtime_minutes": 64,
+  "notes": "Canonical level sequence curated for strategic-phase-18; combined estimated playtime >= 60 minutes."
+}

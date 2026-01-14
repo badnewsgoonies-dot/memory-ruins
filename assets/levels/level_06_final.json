@@ -1,0 +1,14 @@
+{
+  "id": "level_06_final",
+  "name": "Final - Memory Core",
+  "description": "Concluding area combining mechanics from previous rooms into a multi-stage puzzle and narrative resolution.",
+  "width": 2000,
+  "height": 1200,
+  "estimated_playtime_minutes": 15,
+  "entities": [
+    { "type": "player_spawn", "x": 400, "y": 1160 },
+    { "type": "platform", "x": 0, "y": 1180, "width": 2000, "height": 20 },
+    { "type": "puzzle", "id": "final_sequence", "puzzle_type": "multi_stage", "x": 1000, "y": 900, "difficulty": "very_hard", "hint": "Combine anchors, sequencing, and collected shards to reboot the core." },
+    { "type": "collectible", "id": "final_shard", "x": 1400, "y": 760 }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "area_03_time_anchored",
+  "title": "Time-Anchored Atrium",
+  "estimated_playtime_minutes": 11,
+  "puzzles": [
+    {"id":"p1","type":"time_anchor_chain","description":"Chain anchors to create a temporal bridge"},
+    {"id":"p2","type":"puzzle_item","description":"Use recorder to capture and replay a guardian's path"}
+  ],
+  "notes": "Focus on chaining Time-Anchor instances; enforces resource management of anchor charges"
+}

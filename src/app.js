@@ -1,14 +1,7 @@
 import { Tilemap } from './tilemap/tilemap.js'; // Assuming tilemap.ts compiles to tilemap.js
 import { Player } from './player.js';
 import { InputManager } from './input.js';
-import { TILE_SIZE } from './constants.js'; // Assuming constants.ts compiles to constants.js
-
-const CANVAS_WIDTH = 800;
-const CANVAS_HEIGHT = 600;
-const PLAYER_START_X = 100;
-const PLAYER_START_Y = 100;
-const PLAYER_WIDTH = 32;
-const PLAYER_HEIGHT = 32;
+import { TILE_SIZE, CANVAS_WIDTH, CANVAS_HEIGHT, PLAYER_START_X, PLAYER_START_Y, PLAYER_WIDTH, PLAYER_HEIGHT, PLAYER_MOVE_SPEED } from './constants.js'; // Shared constants
 
 class Game {
   /** @type {HTMLCanvasElement} */
@@ -66,9 +59,9 @@ class Game {
     }
     // Basic horizontal movement for testing
     if (this.#inputManager.isKeyPressed('ArrowLeft')) {
-        this.#player.vel.x = -100;
+        this.#player.vel.x = -PLAYER_MOVE_SPEED;
     } else if (this.#inputManager.isKeyPressed('ArrowRight')) {
-        this.#player.vel.x = 100;
+        this.#player.vel.x = PLAYER_MOVE_SPEED;
     } else {
         this.#player.vel.x = 0;
     }

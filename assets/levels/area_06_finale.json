@@ -1,0 +1,10 @@
+{
+  "version": "1.0",
+  "id": "area_06_finale",
+  "name": "Area 06 - Finale",
+  "estimated_minutes": 10,
+  "metadata": { "difficulty": "hard" },
+  "rooms": [
+    { "id": "final_confrontation", "description": "Final sequence and resolution with combined mechanics.", "puzzles": ["final_sequence","timed_decision"], "entities": [] }
+  ]
+}

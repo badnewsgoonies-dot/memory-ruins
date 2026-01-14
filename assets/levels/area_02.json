@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "name": "Area 02 - Clockwork Halls",
+  "estimated_playtime_minutes": 13,
+  "difficulty": "Easy",
+  "description": "Time-based puzzles: moving platforms and simple switches.",
+  "entities": [
+    { "components": { "position": { "x": 80, "y": 640 }, "player_spawn": true } },
+    { "components": { "position": { "x": 300, "y": 580 }, "mechanism": { "type": "switch", "target": "gate-1" } } },
+    { "components": { "position": { "x": 900, "y": 520 }, "collectible": { "type": "memory_fragment", "id": "mf-02" } } }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "area_02_fragmented_halls",
+  "title": "Fragmented Halls",
+  "estimated_playtime_minutes": 12,
+  "puzzles": [
+    {"id":"p1","type":"sequence","description":"Restore power routing across three nodes using timed anchors"},
+    {"id":"p2","type":"environment","description":"Navigate shifting platforms affected by localized rewinds"},
+    {"id":"p3","type":"stealth","description":"Evade echo-guards using drone distractions"}
+  ],
+  "notes": "Mid-complexity interactions; introduces multi-node time puzzles and stealth interplay"
+}

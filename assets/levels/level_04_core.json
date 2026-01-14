@@ -1,0 +1,14 @@
+{
+  "id": "level_04_core",
+  "name": "Core Concourse",
+  "description": "Central hub featuring layered puzzles that require using the Time-Anchor to alter object states across timelines.",
+  "width": 1800,
+  "height": 1000,
+  "estimated_playtime_minutes": 15,
+  "entities": [
+    { "type": "player_spawn", "x": 300, "y": 940 },
+    { "type": "platform", "x": 0, "y": 960, "width": 1800, "height": 40 },
+    { "type": "puzzle", "id": "core_bridge", "puzzle_type": "time_manipulation_bridge", "x": 900, "y": 820, "difficulty": "hard", "hint": "Anchor past state to reconstruct the bridge." },
+    { "type": "npc", "id": "guardian_1", "x": 1200, "y": 860, "behavior": "patrol" }
+  ]
+}

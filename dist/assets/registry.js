@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.SFX_COIN = exports.SFX_JUMP = exports.MUSIC_MAIN = exports.AUDIO_MANIFEST = exports.TILESET = exports.PLAYER_SPRITE = exports.TILES_MANIFEST = exports.SPRITES_MANIFEST = void 0;
+exports.SPRITES_MANIFEST = 'assets/sprites/manifest.json';
+exports.TILES_MANIFEST = 'assets/tiles/manifest.json';
+exports.PLAYER_SPRITE = 'assets/sprites/player.png';
+exports.TILESET = 'assets/tiles/tileset.png';
+exports.AUDIO_MANIFEST = 'assets/audio/manifest.json';
+exports.MUSIC_MAIN = 'assets/audio/music_main.ogg';
+exports.SFX_JUMP = 'assets/audio/sfx_jump.wav';
+exports.SFX_COIN = 'assets/audio/sfx_coin.wav';

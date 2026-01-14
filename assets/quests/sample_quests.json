@@ -1,0 +1,20 @@
+[
+  {
+    "id": "q_intro_001",
+    "title": "First Steps",
+    "description": "Collect 3 Memory Shards scattered in the starting area.",
+    "xpReward": 50,
+    "objectives": [
+      { "id": "o1", "type": "collect", "target": "memory_shard", "amount": 3 }
+    ]
+  },
+  {
+    "id": "q_visit_tower",
+    "title": "Signal Tower",
+    "description": "Visit the broken signal tower to restore local comms.",
+    "xpReward": 30,
+    "objectives": [
+      { "id": "o1", "type": "visit", "target": "signal_tower", "amount": 1 }
+    ]
+  }
+]

@@ -1,0 +1,4 @@
+{
+  "mainMenu": ["Start Game", "Options", "Exit"],
+  "pauseMenu": ["Resume", "Restart", "Exit to Menu"]
+}

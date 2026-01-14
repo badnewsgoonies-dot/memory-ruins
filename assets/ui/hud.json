@@ -1,0 +1,9 @@
+{
+  "hud": {
+    "width": 220,
+    "height": 56,
+    "background": "rgba(0,0,0,0.5)",
+    "healthColor": "#e53935",
+    "font": "sans-serif"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "Test Room",
+  "ground": {
+    "x": 0,
+    "y": 100,
+    "width": 800,
+    "height": 20
+  },
+  "platforms": [
+    {
+      "id": "platform1",
+      "x": 100,
+      "y": 70,
+      "width": 150,
+      "height": 10
+    },
+    {
+      "id": "platform2",
+      "x": 300,
+      "y": 50,
+      "width": 100,
+      "height": 10
+    },
+    {
+      "id": "platform3",
+      "x": 500,
+      "y": 80,
+      "width": 200,
+      "height": 10
+    }
+  ]
+}

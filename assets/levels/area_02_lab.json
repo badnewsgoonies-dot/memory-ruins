@@ -1,0 +1,10 @@
+{
+  "version": "1.0",
+  "id": "area_02_lab",
+  "name": "Area 02 - Lab",
+  "estimated_minutes": 15,
+  "metadata": { "difficulty": "medium" },
+  "rooms": [
+    { "id": "lab_hub", "description": "Research lab with sequencing puzzles and time-locked doors.", "puzzles": ["sequence","timed_switches"], "entities": [] }
+  ]
+}

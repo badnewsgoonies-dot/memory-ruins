@@ -1,0 +1,13 @@
+{
+  "id": "level_02_lab",
+  "name": "Laboratory - Corrupted Logs",
+  "description": "A lab area with sequencing puzzles and a locked console that requires memory fragments.",
+  "width": 1400,
+  "height": 800,
+  "estimated_playtime_minutes": 12,
+  "entities": [
+    { "type": "player_spawn", "x": 80, "y": 760 },
+    { "type": "platform", "x": 0, "y": 780, "width": 1400, "height": 20 },
+    { "type": "puzzle", "id": "seq_switches", "puzzle_type": "sequence_switches", "x": 720, "y": 600, "difficulty": "medium", "hint": "Switch order matters; use time-anchor to test" }
+  ]
+}

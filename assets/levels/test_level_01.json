@@ -1,0 +1,11 @@
+{
+  "id": "test_level_01",
+  "name": "Test Level 01",
+  "description": "A small test level for integration and automated checks.",
+  "width": 1024,
+  "height": 768,
+  "entities": [
+    { "type": "player_spawn", "x": 100, "y": 680 },
+    { "type": "platform", "x": 0, "y": 720, "width": 1024, "height": 48 }
+  ]
+}

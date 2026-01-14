@@ -1,0 +1,13 @@
+{
+  "id": "level_01_intro",
+  "name": "Intro - The Awakening",
+  "description": "Tutorial room introducing movement, interactables, and the Time-Anchor mechanic.",
+  "width": 1280,
+  "height": 720,
+  "estimated_playtime_minutes": 10,
+  "entities": [
+    { "type": "player_spawn", "x": 120, "y": 640 },
+    { "type": "platform", "x": 0, "y": 700, "width": 1280, "height": 20 },
+    { "type": "puzzle", "id": "tutor_anchor_1", "puzzle_type": "time_anchor_tutorial", "x": 600, "y": 660, "hint": "Place an anchor, then rewind to observe state changes." }
+  ]
+}

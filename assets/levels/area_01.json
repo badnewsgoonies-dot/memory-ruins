@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "name": "Area 01 - Echo Atrium",
+  "estimated_playtime_minutes": 12,
+  "description": "Introductory area: basic platforming and Time-Anchor tutorial.",
+  "entities": [
+    { "components": { "position": { "x": 100, "y": 640 }, "player_spawn": true } },
+    { "components": { "position": { "x": 400, "y": 640 }, "platform": { "width": 300, "height": 24 } } },
+    { "components": { "position": { "x": 700, "y": 600 }, "collectible": { "type": "memory_fragment", "id": "mf-01" } } }
+  ]
+}

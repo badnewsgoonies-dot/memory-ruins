@@ -1,0 +1,26 @@
+{
+  "npcs": [
+    {
+      "id": "old_man",
+      "name": "Old Man",
+      "dialogue": [
+        {
+          "id": "greet",
+          "text": "Hello, traveler. The road is long today.",
+          "choices": [
+            { "text": "Who are you?", "next": "who" },
+            { "text": "Goodbye.", "next": null }
+          ]
+        },
+        {
+          "id": "who",
+          "text": "Just an old man with many stories of the sea.",
+          "choices": [
+            { "text": "Tell me a story.", "next": null },
+            { "text": "Farewell.", "next": null }
+          ]
+        }
+      ]
+    }
+  ]
+}

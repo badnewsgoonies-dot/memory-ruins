@@ -1,0 +1,14 @@
+{
+  "id": "level_05_outskirts",
+  "name": "Outskirts - Fractured Grounds",
+  "description": "Outdoor maintenance rigs with traversal puzzles and a mid-level mini-boss encounter.",
+  "width": 1500,
+  "height": 900,
+  "estimated_playtime_minutes": 8,
+  "entities": [
+    { "type": "player_spawn", "x": 100, "y": 860 },
+    { "type": "platform", "x": 0, "y": 880, "width": 1500, "height": 20 },
+    { "type": "puzzle", "id": "tower_climb", "puzzle_type": "timed_climb", "x": 750, "y": 600, "difficulty": "medium", "hint": "Use anchors to pause moving platforms." },
+    { "type": "enemy", "id": "mini_boss", "x": 1300, "y": 860, "ai": { "type": "guard" } }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "area_05_core_archive",
+  "title": "Core Archive",
+  "estimated_playtime_minutes": 10,
+  "puzzles": [
+    {"id":"p1","type":"puzzle_chain","description":"Multi-stage puzzle combining scanner, recorder and anchor mechanics"},
+    {"id":"p2","type":"narrative","description":"Collect three Story Shards to unlock a memory-cinematic"}
+  ],
+  "notes": "High narrative density; advances plot and branches based on collected shards"
+}

@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "name": "Area 05 - Reflection Chambers",
+  "estimated_playtime_minutes": 12,
+  "description": "Puzzle cluster with branching choices that affect later rooms.",
+  "entities": [
+    { "components": { "position": { "x": 50, "y": 640 }, "player_spawn": true } },
+    { "components": { "position": { "x": 360, "y": 560 }, "puzzle": { "type": "mirror", "count": 2 } } },
+    { "components": { "position": { "x": 920, "y": 480 }, "collectible": { "type": "memory_fragment", "id": "mf-05" } } }
+  ]
+}

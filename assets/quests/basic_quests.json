@@ -1,0 +1,21 @@
+[
+  {
+    "id": "find_memory_shards",
+    "title": "Recover Memory Shards",
+    "description": "Collect 3 Memory Shards scattered in the ruins.",
+    "objectives": [
+      { "id": "collect_shard", "type": "collect", "description": "Collect Memory Shard", "targetId": "memory_shard", "requiredCount": 3 }
+    ],
+    "reward": { "xp": 100, "unlock": "area_alpha" }
+  },
+  {
+    "id": "visit_control_room",
+    "title": "Reach the Control Room",
+    "description": "Find and enter the Control Room to access the archive.",
+    "objectives": [
+      { "id": "reach_control", "type": "visit", "description": "Enter Control Room", "targetId": "control_room" }
+    ],
+    "prerequisites": ["find_memory_shards"],
+    "reward": { "xp": 50 }
+  }
+]

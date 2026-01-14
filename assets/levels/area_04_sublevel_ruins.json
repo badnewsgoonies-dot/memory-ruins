@@ -1,0 +1,11 @@
+{
+  "id": "area_04_sublevel_ruins",
+  "title": "Sublevel: Archive Ruins",
+  "estimated_playtime_minutes": 11,
+  "puzzles": [
+    {"id":"p1","type":"map_shift","description":"Shift map fragments to align memory corridors"},
+    {"id":"p2","type":"resource","description":"Recover upgrade shard to expand drone range"},
+    {"id":"p3","type":"boss_mini","description":"Confront a corrupted echo and use time anchors to expose weak points"}
+  ],
+  "notes": "Reward exploration with persistent upgrade (DRONE_RANGE_UPGRADE)"
+}

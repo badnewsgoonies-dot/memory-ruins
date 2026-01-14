@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "name": "Area 03 - Fractured Archive",
+  "estimated_playtime_minutes": 12,
+  "description": "Environmental puzzles and exploration; hidden passages.",
+  "entities": [
+    { "components": { "position": { "x": 60, "y": 640 }, "player_spawn": true } },
+    { "components": { "position": { "x": 480, "y": 540 }, "puzzle": { "type": "sequence", "steps": 3 } } },
+    { "components": { "position": { "x": 1100, "y": 480 }, "collectible": { "type": "memory_fragment", "id": "mf-03" } } }
+  ]
+}

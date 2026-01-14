@@ -1,0 +1,11 @@
+{
+  "id": "area_01_tutorial",
+  "title": "Tutorial: The Waking Bay",
+  "estimated_playtime_minutes": 8,
+  "puzzles": [
+    {"id":"p1","type":"platforming","description":"Basic movement and jump calibration"},
+    {"id":"p2","type":"time-anchor","description":"Introduce Time-Anchor: record/rewind a small object"},
+    {"id":"p3","type":"scanner","description":"Use scanner to locate first Memory Shard"}
+  ],
+  "notes": "Defines core mechanics and introduces named constants (e.g., BASE_HEALTH, TIME_ANCHOR_MAX_DURATION)"
+}

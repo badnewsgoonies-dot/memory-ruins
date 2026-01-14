@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "name": "test-level-1",
+  "entities": [
+    {
+      "id": "player",
+      "components": {
+        "position": { "x": 10, "y": 20 },
+        "velocity": { "x": 0, "y": 0 },
+        "player": { "isPlayer": true }
+      }
+    },
+    {
+      "id": "enemy-1",
+      "components": {
+        "position": { "x": 100, "y": 150 },
+        "ai": { "type": "patrol", "patrolRadius": 24 }
+      }
+    }
+  ]
+}

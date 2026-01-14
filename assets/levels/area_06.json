@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "name": "Area 06 - Memory Core",
+  "estimated_playtime_minutes": 12,
+  "description": "Final area: integrated puzzle combining mechanics and a narrative beat.",
+  "entities": [
+    { "components": { "position": { "x": 140, "y": 640 }, "player_spawn": true } },
+    { "components": { "position": { "x": 640, "y": 520 }, "puzzle": { "type": "time_anchor", "difficulty": "medium" } } },
+    { "components": { "position": { "x": 1120, "y": 420 }, "collectible": { "type": "memory_fragment", "id": "mf-06" } } }
+  ]
+}
