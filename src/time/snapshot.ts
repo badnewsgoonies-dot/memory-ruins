@@ -32,14 +32,11 @@ export const MAX_SNAPSHOT_COUNT = 100; // Configurable constant
  * Snapshots are deterministic and size-bounded.
  */
 export class SnapshotManager {
-  private snapshots: GameState[] = [];
-  private currentFrame = 0;
+  private maxSnapshots: number;
 
   constructor(maxSnapshots: number = MAX_SNAPSHOT_COUNT) {
     this.maxSnapshots = maxSnapshots;
   }
-
-  private maxSnapshots: number;
 
   /**
    * Records the current deterministic game state as a snapshot.
@@ -92,6 +89,31 @@ export class SnapshotManager {
    */
   public getCurrentFrame(): number {
     return this.currentFrame;
+  }
+
+  /**
+   * Returns the current number of stored snapshots.
+   */
+  public getSnapshotCount(): number {
+    return this.snapshots.length;
+  }
+
+  /**
+   * Clears all snapshots that occurred after the specified frame number.
+   * This is used during rewind to discard "future" history.
+   * @param frame The frame number up to which snapshots should be retained (inclusive).
+   */
+  public clearSnapshotsAfterFrame(frame: number): void {
+    const index = this.snapshots.findIndex(snapshot => snapshot.frame > frame);
+    if (index !== -1) {
+      this.snapshots.splice(index); // Remove all elements from index to the end
+    }
+    // Update currentFrame if it's now beyond the latest snapshot
+    if (this.snapshots.length > 0) {
+      this.currentFrame = this.snapshots[this.snapshots.length - 1].frame;
+    } else {
+      this.currentFrame = 0;
+    }
   }
 }
 
